@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<domain type="kvm">
+  <name>CentOS_63_x86_64_simcrs</name>
+  <memory>1048576</memory>
+  <currentMemory>1048576</currentMemory>
+  <uuid>f910ac24-8aaf-429a-ba46-3d5694c749f6</uuid>
+  <clock offset="utc"/>
+  <vcpu>1</vcpu>
+  <features>
+    <acpi/>
+    <apic/>
+    <pae/>
+  </features>
+  <os>
+    <type>hvm</type>
+    <boot dev="cdrom"/>
+  </os>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>destroy</on_reboot>
+  <on_crash>destroy</on_crash>
+  <devices>
+    <graphics port="-1" type="vnc"/>
+    <interface type="bridge">
+      <source bridge="virbr0"/>
+      <mac address="52:54:00:bb:8f:10"/>
+      <model type="virtio"/>
+    </interface>
+    <input bus="ps2" type="mouse"/>
+    <console type="pty">
+      <target port="0"/>
+    </console>
+    <serial type="tcp">
+      <source mode="bind" host="127.0.0.1" service="5588"/>
+      <protocol type="raw"/>
+      <target port="1"/>
+    </serial>
+    <disk device="disk" type="file">
+      <target dev="vda" bus="virtio"/>
+      <source file="/var/lib/libvirt/images/CentOS_63_x86_64_simcrs.dsk"/>
+    </disk>
+    <disk type="file" device="cdrom">
+      <source file="/data/virtualisation/CentOS/CentOS-6.3-x86_64-minimal/CentOS-6.3-x86_64-minimal.iso"/>
+      <target dev="hdc"/>
+    </disk>
+  </devices>
+</domain>
+
+
