@@ -1,3 +1,4 @@
+# Python extensions
 *.py[cod]
 
 # C extensions
@@ -33,3 +34,7 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+#
+/build/
+
