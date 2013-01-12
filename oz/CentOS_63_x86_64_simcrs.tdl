@@ -2,7 +2,7 @@
   <name>CentOS_63_x86_64_tvlsim</name>
   <os>
     <name>CentOS-6</name>
-    <version>U3</version>
+    <version>3</version>
     <arch>x86_64</arch>
     <install type='iso'>
       <iso>http://localhost/VM/images/CentOS/CentOS-6.3-x86_64-minimal/CentOS-6.3-x86_64-minimal.iso</iso>

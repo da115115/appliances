@@ -1,0 +1,19 @@
+<template>
+  <name>Fedora_17_x86_64_simcrs</name>
+  <os>
+    <name>Fedora</name>
+    <version>17</version>
+    <arch>x86_64</arch>
+    <install type='iso'>
+      <iso>http://localhost/VM/images/Fedora/Fedora-17-x86_64-DVD/Fedora-17-x86_64-DVD.iso</iso>
+    </install>
+    <rootpw>Welcome01</rootpw>
+  </os>
+  <description>Template for Fedora 17 x86_64 with the Travel Market Simulator (tvlsim.com)</description>
+  <packages>
+    <package name='simcrs-devel'/>
+	<package name='trademgen-devel'/>
+	<package name='travelccm-devel'/>
+  </packages>
+</template>
+
