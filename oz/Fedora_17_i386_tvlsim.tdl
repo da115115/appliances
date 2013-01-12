@@ -1,0 +1,19 @@
+<template>
+  <name>Fedora_17_i386_sim2</name>
+  <os>
+    <name>Fedora</name>
+    <version>17</version>
+    <arch>i386</arch>
+    <install type='iso'>
+      <iso>http://localhost/VM/images/Fedora/Fedora-17-i386-DVD/Fedora-17-i386-DVD.iso</iso>
+    </install>
+    <rootpw>Welcome01</rootpw>
+  </os>
+  <description>Template for Fedora 17 i386 with the Travel Market Simulator (tvlsim.com)</description>
+  <packages>
+    <package name='airinv-devel'/>
+	<package name='trademgen-devel'/>
+	<package name='travelccm-devel'/>
+  </packages>
+</template>
+

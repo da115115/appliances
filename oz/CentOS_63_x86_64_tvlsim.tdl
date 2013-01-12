@@ -1,0 +1,26 @@
+<template>
+  <name>CentOS_63_x86_64_tvlsim</name>
+  <os>
+    <name>CentOS-6</name>
+    <version>U3</version>
+    <arch>x86_64</arch>
+    <install type='iso'>
+      <iso>http://localhost/VM/images/CentOS/CentOS-6.3-x86_64-minimal/CentOS-6.3-x86_64-minimal.iso</iso>
+	  <!-- file:///data/virtualisation/CentOS/CentOS-6.3-x86_64-minimal/CentOS-6.3-x86_64-minimal.iso -->
+    </install>
+    <rootpw>Welcome01</rootpw>
+  </os>
+  <description>Template for CentOS 6.3 x86_64 with the Travel Market Simulator (tvlsim.com)</description>
+  <repositories>
+	<repository name='epel-6'>
+		<url>http://download.fedoraproject.org/pub/epel/6/$basearch</url>
+		<signed>yes</signed>
+	</repository>
+  </repositories>
+  <packages>
+	<package name='trademgen-devel'/>
+	<package name='travelccm-devel'/>
+	<package name='simcrs-devel'/>
+  </packages>
+</template>
+
